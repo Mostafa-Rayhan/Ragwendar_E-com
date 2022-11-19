@@ -12,7 +12,6 @@ const BestSellerSlider = () => {
             <div className="row">
             <div className="col-xs-12">
                 <div className="">
-                
                     <Swiper
                       slidesPerView={2}
                       spaceBetween={10}
@@ -61,10 +60,10 @@ const BestSellerSlider = () => {
                         <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
                       </div>
                     </Swiper>    
-                    {/* <div className="swiper focusSlider"> */}
-                    {/* <div className="swiper-wrapper main-slider"> */} 
-                    {/* </div> */}
-                {/* </div> */}
+                    {/* <div className="swiper focusSlider">
+                    <div className="swiper-wrapper main-slider">  */}
+                    {/* </div>
+                </div> */}
                 </div>
             </div>
             </div>
