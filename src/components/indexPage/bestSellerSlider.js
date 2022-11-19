@@ -13,18 +13,40 @@ const BestSellerSlider = () => {
             <div className="col-xs-12">
                 <div className="">
                 <div className="swiper focusSlider">
-                    <div className="swiper-wrapper main-slider">
+                    {/* <div className="swiper-wrapper main-slider"> */}
                     <Swiper
                       slidesPerView={2}
                       spaceBetween={10}
-                      
+                      breakpoints= {
+                        {200: {
+                          slidesPerView: 3,
+                          spaceBetween: 10,
+                        },
+                        500: {
+                          slidesPerView: 3,
+                          spaceBetween: 20,
+                        },
+                        640: {
+                          slidesPerView: 3,
+                          spaceBetween: 30,
+                        },
+                        768: {
+                          slidesPerView: 3,
+                          spaceBetween: 30,
+                        },
+                        1024: {
+                          slidesPerView: 3,
+                          spaceBetween: 30,
+                        },
+                      }
+                      }
                       loop={true}
                       loopFillGroupWithBlank={true}
                       pagination={{
                         clickable: true,
                       }}
                       
-                      className="mySwiper"
+                      className="mySwiper main-slider"
                     >
                       <SwiperSlide>
                       <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
@@ -62,7 +84,7 @@ const BestSellerSlider = () => {
 
                     </Swiper>     
                     
-                    </div>
+                    {/* </div> */}
                 </div>
                 </div>
             </div>
