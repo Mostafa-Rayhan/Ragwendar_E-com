@@ -19,10 +19,10 @@ function App() {
             <Route index element={ <Index /> }></Route>
             <Route path="product" element={ <Product /> }></Route>
             <Route path="singleProduct" element={ <SingleProduct /> }></Route>
-            <Route path="cart" element={ <Cart /> }></Route>
-            <Route path="checkout" element={ <Checkout /> }></Route>
+            
           </Route>
-          
+          <Route path="cart" element={ <Cart /> }></Route>
+          <Route path="checkout" element={ <Checkout /> }></Route>
           
           {/* <Route path="wishlist" element={ <Wishlist /> }></Route> */}
 

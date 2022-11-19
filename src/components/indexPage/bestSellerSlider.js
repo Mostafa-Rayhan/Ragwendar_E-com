@@ -1,4 +1,9 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const BestSellerSlider = () => {
   return (
@@ -9,17 +14,54 @@ const BestSellerSlider = () => {
                 <div className="">
                 <div className="swiper focusSlider">
                     <div className="swiper-wrapper main-slider">
-                    <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
-                    <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
-                    <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a>
-                    <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
-                    <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
-                    <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a>
-                    <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
-                    <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
-                    <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a>
-                    <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
-                    <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
+                    <Swiper
+                      slidesPerView={2}
+                      spaceBetween={10}
+                      
+                      loop={true}
+                      loopFillGroupWithBlank={true}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      
+                      className="mySwiper"
+                    >
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                      <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
+                      </SwiperSlide>
+
+                    </Swiper>     
+                    
                     </div>
                 </div>
                 </div>

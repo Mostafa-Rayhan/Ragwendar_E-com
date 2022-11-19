@@ -16,7 +16,7 @@ const Section1 = () => {
     <div className="container pt-4">
       <div className="row">
         <div className="col-xs-12">
-          <div id="main-offers" className="Swiper swiperSecTwo">
+          <div id="main-offers" className="swiper swiperSecTwo">
             <div className="swiper-wrapper">
             <Swiper
               slidesPerView={9}

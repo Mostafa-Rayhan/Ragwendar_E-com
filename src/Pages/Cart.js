@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cart = () => {
   return (
-    <section>
+    <>
         <div className="sticky-top">
             <nav className="d-none d-md-block" id="tab-color" color="blue">
                 <div className="container">
@@ -248,7 +248,7 @@ const Cart = () => {
                     </div>
                     <div className="d-flex justify-content-between p-2">
                     <div className="summary_text">Shipping</div>
-                    <div className="summary_text" style="color: rgb(29, 136, 2)">FREE</div>
+                    <div className="summary_text" style={{ color: "rgb(29, 136, 2)" }}>FREE</div>
                     </div>
                     <div className="d-flex justify-content-between p-2">
                     <div className="summary_text">Cart Total</div>
@@ -263,7 +263,7 @@ const Cart = () => {
                 <div className="row container ">
                     <div
                     className="col-12  mb-3 mt-2 savingLabel_cart"
-                    style="background-color: #4CAF53; color: white"
+                    style={{ backgroundColor: "#4CAF53", color: "white" }}
                     >
                     You saved ₹ 190 on this order
                     </div>
@@ -302,37 +302,37 @@ const Cart = () => {
         
 
         <footer className="m-auto d-flex justify-content-center">
-            <div tabindex="0" role="contentinfo" className="bank-img p-4"
+            <div tabIndex="0" role="contentinfo" className="bank-img p-4"
                 aria-label="We accept PayPal, Visa, Mastercard, Maestro, and more.">
-                <img aria-hidden="true" tabindex="-1"
+                <img aria-hidden="true" tabIndex="-1"
                 data-src="//img.ltwebstatic.com/images3_pi/2021/03/09/161528368123dd7a35ad8708b0dfc74b3630526891.png"
                 className="c-img-con-m px-2 j-verlok-lazy loaded"
                 data-lazy-src="//img.ltwebstatic.com/images3_pi/2021/03/09/161528368123dd7a35ad8708b0dfc74b3630526891.png"
                 src="//img.ltwebstatic.com/images3_pi/2021/03/09/161528368123dd7a35ad8708b0dfc74b3630526891.png"
                 data-was-processed="true" />
-                <img aria-hidden="true" tabindex="-1"
+                <img aria-hidden="true" tabIndex="-1"
                 data-src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282732983375743706.png"
                 className="c-img-con-m px-2 j-verlok-lazy loaded"
                 data-lazy-src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282732983375743706.png"
                 src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282732983375743706.png" data-was-processed="true" />
 
-                <img aria-hidden="true" tabindex="-1"
+                <img aria-hidden="true" tabIndex="-1"
                 data-src="//img.ltwebstatic.com/images2_pi/2018/06/06/1528273151799711689.png"
                 className="c-img-con-m px-2 j-verlok-lazy loaded"
                 data-lazy-src="//img.ltwebstatic.com/images2_pi/2018/06/06/1528273151799711689.png"
                 src="//img.ltwebstatic.com/images2_pi/2018/06/06/1528273151799711689.png" data-was-processed="true" />
-                <img aria-hidden="true" tabindex="-1"
+                <img aria-hidden="true" tabIndex="-1"
                 data-src="//img.ltwebstatic.com/images3_pi/2020/09/23/16008293560df34023305e4c8617d6886e33b59531.png"
                 className="c-img-con-m px-2 j-verlok-lazy loaded"
                 data-lazy-src="//img.ltwebstatic.com/images3_pi/2020/09/23/16008293560df34023305e4c8617d6886e33b59531.png"
                 src="//img.ltwebstatic.com/images3_pi/2020/09/23/16008293560df34023305e4c8617d6886e33b59531.png"
                 data-was-processed="true" />
-                <img aria-hidden="true" tabindex="-1"
+                <img aria-hidden="true" tabIndex="-1"
                 data-src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282733431754785346.png"
                 className="c-img-con-m px-2 j-verlok-lazy loaded"
                 data-lazy-src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282733431754785346.png"
                 src="//img.ltwebstatic.com/images2_pi/2018/06/06/15282733431754785346.png" data-was-processed="true" />
-                <img aria-hidden="true" tabindex="-1"
+                <img aria-hidden="true" tabIndex="-1"
                 data-src="//img.ltwebstatic.com/images3_pi/2021/01/15/1610701410b3781f00695b77b833e6b6a5e38331a3.png"
                 className="c-img-con-m px-2 j-verlok-lazy loaded"
                 data-lazy-src="//img.ltwebstatic.com/images3_pi/2021/01/15/1610701410b3781f00695b77b833e6b6a5e38331a3.png"
@@ -340,7 +340,7 @@ const Cart = () => {
                 data-was-processed="true" />
             </div>
         </footer>
-    </section>
+    </>
     
   );
 }
