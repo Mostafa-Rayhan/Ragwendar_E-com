@@ -2,7 +2,7 @@ import React from 'react'
 
 const SingleProduct = () => {
   return (
-    <section>
+    <>
         <div className="container">
             <nav aria-label="breadcrumb" className="py-3">
             <ol className="breadcrumb">
@@ -135,19 +135,19 @@ const SingleProduct = () => {
                 <span className="selectSizeTitle">COLOR OPTIONS</span>
                 <div className="row d-flex justify-content-start p-2 btnColorPickerRow colorPickerBtnDiv">
                     <input type="radio" className="btn-check" name="color1" id="filter-color-1" />
-                    <label className="col-1 m-1 p-4 bg-secondary rounded btnColorPicker" for="filter-color-1"></label>
+                    <label className="col-1 m-1 p-4 bg-secondary rounded btnColorPicker" htmlFor="filter-color-1"></label>
                     <input type="radio" className="btn-check" name="color1" id="filter-color-2" />
-                    <label className="col-1 m-1 p-4 bg-white rounded btnColorPicker" for="filter-color-2"></label>
+                    <label className="col-1 m-1 p-4 bg-white rounded btnColorPicker" htmlFor="filter-color-2"></label>
                     <input type="radio" className="btn-check" name="color1" id="filter-color-3" />
-                    <label className="col-1 m-1 p-4 bg-dark rounded btnColorPicker" for="filter-color-3"></label>
+                    <label className="col-1 m-1 p-4 bg-dark rounded btnColorPicker" htmlFor="filter-color-3"></label>
                     <input type="radio" className="btn-check" name="color1" id="filter-color-4" />
-                    <label className="col-1 m-1 p-4 bg-info rounded btnColorPicker" for="filter-color-4"></label>
+                    <label className="col-1 m-1 p-4 bg-info rounded btnColorPicker" htmlFor="filter-color-4"></label>
                     <input type="radio" className="btn-check" name="color1" id="filter-color-5" />
-                    <label className="col-1 m-1 p-4 bg-light rounded btnColorPicker" for="filter-color-5"></label>
+                    <label className="col-1 m-1 p-4 bg-light rounded btnColorPicker" htmlFor="filter-color-5"></label>
                     <input type="radio" className="btn-check" name="color1" id="filter-color-6" />
-                    <label className="col-1 m-1 p-4 bg-warning rounded btnColorPicker" for="filter-color-6"></label>
+                    <label className="col-1 m-1 p-4 bg-warning rounded btnColorPicker" htmlFor="filter-color-6"></label>
                     <input type="radio" className="btn-check" name="color1" id="filter-color-7" />
-                    <label className="col-1 m-1 p-4 bg-danger rounded btnColorPicker" for="filter-color-7"></label>
+                    <label className="col-1 m-1 p-4 bg-danger rounded btnColorPicker" htmlFor="filter-color-7"></label>
                 </div>
                 </div>
                 {/* <!-- Select Size --> */}
@@ -167,22 +167,22 @@ const SingleProduct = () => {
                     </div>
                     <div className="selectSize">
                     <input type="radio" className="btn-check" name="size1" id="filter-size-1" />
-                    <label for="filter-size-1" className="eachSize disableSizeV3"><span>S</span></label>
+                    <label htmlFor="filter-size-1" className="eachSize disableSizeV3"><span>S</span></label>
 
                     <input type="radio" className="btn-check" name="size1" id="filter-size-2" />
-                    <label for="filter-size-2" className="eachSize disableSizeV3"><span>M</span></label>
+                    <label htmlFor="filter-size-2" className="eachSize disableSizeV3"><span>M</span></label>
 
                     <input type="radio" className="btn-check" name="size1" id="filter-size-3" />
-                    <label for="filter-size-3" className="eachSize disableSizeV3"><span>L</span></label>
+                    <label htmlFor="filter-size-3" className="eachSize disableSizeV3"><span>L</span></label>
 
                     <input type="radio" className="btn-check" name="size1" id="filter-size-4" />
-                    <label for="filter-size-4" className="eachSize disableSizeV3"><span>XL</span></label>
+                    <label htmlFor="filter-size-4" className="eachSize disableSizeV3"><span>XL</span></label>
 
                     <input type="radio" className="btn-check" name="size1" id="filter-size-5" />
-                    <label for="filter-size-5" className="eachSize disableSizeV3"><span>2XL</span></label>
+                    <label htmlFor="filter-size-5" className="eachSize disableSizeV3"><span>2XL</span></label>
 
                     <input type="radio" className="btn-check" name="size1" id="filter-size-6" />
-                    <label for="filter-size-6" className="eachSize disableSizeV3"><span>3XL</span></label>
+                    <label htmlFor="filter-size-6" className="eachSize disableSizeV3"><span>3XL</span></label>
                     </div>
                 </div>
                 </div>
@@ -194,9 +194,9 @@ const SingleProduct = () => {
                     <div className="col-3 col-md-3 col-lg-2 d-grid p-0 ">
                     <div className="d-flex align-items-center w-100">
                         Qty&nbsp;<div className="d-flex align-items-center w-100 justify-content-around p-0 py-2 itemCount">
-                        <p onclick="decrease()">-</p>
+                        <p onClick="decrease()">-</p>
                         <span className="mb-0 fw-bold priceValue">1</span>
-                        <p onclick="increase()">+</p>
+                        <p onClick="increase()">+</p>
                         </div>
                     </div>
                     </div>
@@ -365,7 +365,7 @@ const SingleProduct = () => {
                 <div className="productCardBox">
                 <div className="productCardImg false">
                     <div className="productImg" style={{ width: "100%", position: "relative", background: "rgb(248, 249, 249)" }}>
-                    <img src="assets/productList/1.jpg" alt="" width="100%" height="100%" />
+                    <img src="./assets/productList/1.jpg" alt="" width="100%" height="100%" />
                     </div>
                     <div className="productCardDetail">
                     <div className="d-flex">
@@ -388,7 +388,7 @@ const SingleProduct = () => {
                 <div className="productCardBox">
                 <div className="productCardImg false">
                     <div className="productImg" style={{ width: "100%", position: "relative", background: "rgb(248, 249, 249)" }}>
-                    <img src="assets/productList/2.jpg" alt="" width="100%" height="100%" />
+                    <img src="./assets/productList/2.jpg" alt="" width="100%" height="100%" />
                     </div>
                     <div className="productCardDetail">
                     <div className="d-flex">
@@ -411,7 +411,7 @@ const SingleProduct = () => {
                 <div className="productCardBox">
                 <div className="productCardImg false">
                     <div className="productImg" style={{ width: "100%", position: "relative", background: "rgb(248, 249, 249)" }}>
-                    <img src="assets/productList/3.jpg" alt="" width="100%" height="100%" />
+                    <img src="./assets/productList/3.jpg" alt="" width="100%" height="100%" />
                     </div>
                     <div className="productCardDetail">
                     <div className="d-flex">
@@ -434,7 +434,7 @@ const SingleProduct = () => {
                 <div className="productCardBox">
                 <div className="productCardImg false">
                     <div className="productImg" style={{ width: "100%", position: "relative", background: "rgb(248, 249, 249)" }}>
-                    <img src="assets/productList/4.jpg" alt="" width="100%" height="100%" />
+                    <img src="./assets/productList/4.jpg" alt="" width="100%" height="100%" />
                     </div>
                     <div className="productCardDetail">
                     <div className="d-flex">
@@ -454,7 +454,7 @@ const SingleProduct = () => {
             </div>
         </div>
         </div>
-    </section>
+    </>
   )
 }
 
