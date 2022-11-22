@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ProductCustomize = () => {
   return (
@@ -278,7 +279,7 @@ const ProductCustomize = () => {
           </div>
         </div>
         <div className="section-footer">
-          <a href="product-customize2.html" type="button" className="next-btn button">Next</a>
+          <Link to="/productCustomize2" type="button" className="next-btn button">Next</Link>
         </div>
       </div>
     </div>

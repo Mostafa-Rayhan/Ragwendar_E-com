@@ -1,9 +1,11 @@
 import React, { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { Link } from 'react-router-dom';
 
 // import "./styles.css";
 
@@ -53,64 +55,64 @@ const Section1 = () => {
               className="mySwiper"
             >
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop2.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop3.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop4.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop5.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop6.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop6.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop6.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop6.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop7.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop8.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="product.html" className="SwiperSlide">
+                <Link to="product" className="SwiperSlide">
                   <img src="./assets/dresses/afterNavbar/shop9.png" alt="" />
-                </a>
+                </Link>
               </SwiperSlide>
                
             </Swiper>

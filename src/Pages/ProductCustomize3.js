@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ProductCustomize3 = () => {
   return (
@@ -294,7 +295,7 @@ const ProductCustomize3 = () => {
           // }
         </script> */}
         <div className="section-footer" id="canvasTab">
-          <a href="product-customize4.html" type="button" className="next-btn button">Next</a>
+          <Link to="/productCustomize4" type="button" className="next-btn button">Next</Link>
           {/* <!-- Image offcanvas --> */}
           <div
             className="offcanvas offcanvas-bottom"

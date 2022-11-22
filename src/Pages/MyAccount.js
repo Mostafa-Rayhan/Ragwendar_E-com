@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const MyAccount = () => {
   return (
@@ -197,33 +198,33 @@ const MyAccount = () => {
       <div className="row optionRow">
         <div className="d-xs-flex d-sm-block border-bottom myOptions">
           <div className="options">
-            <a href="myaccount-order.html"
+            <Link to="/myAccountOrder"
               ><span className="optionHead">My Orders</span><i className="fa fa-angle-right fa-fw"></i
-              ><span className="d-block des">View, Modify and Track Orders</span></a
+              ><span className="d-block des">View, Modify and Track Orders</span></Link
             >
           </div>
           <div className="options">
-            <a href="myaccount-payment.html"
+            <Link to="/myAccountPayment"
               ><span className="optionHead">My Payments</span><i className="fa fa-angle-right fa-fw"></i
-              ><span className="d-block des">View, Modify and Track Orders</span></a
+              ><span className="d-block des">View, Modify and Track Orders</span></Link
             >
           </div>
           <div className="options">
-            <a href="myaccount-wallet.html"
+            <Link to="/myAccountWallet"
               ><span className="optionHead">My Wallet</span><i className="fa fa-angle-right fa-fw"></i
-              ><span className="d-block des">View, Modify and Track Orders</span></a
+              ><span className="d-block des">View, Modify and Track Orders</span></Link
             >
           </div>
           <div className="options">
-            <a href="myaccount-address.html"
+            <Link to="/myAccountAddress"
               ><span className="optionHead">My Address</span><i className="fa fa-angle-right fa-fw"></i
-              ><span className="d-block des">View, Modify and Track Orders</span></a
+              ><span className="d-block des">View, Modify and Track Orders</span></Link
             >
           </div>
           <div className="options">
-            <a href="profile.html"
+            <Link to="/myProfile"
               ><span className="optionHead">My Profle</span><i className="fa fa-angle-right fa-fw"></i
-              ><span className="d-block des">View, Modify and Track Orders</span></a
+              ><span className="d-block des">View, Modify and Track Orders</span></Link
             >
           </div>
         </div>

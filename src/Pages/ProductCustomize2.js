@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const ProductCustomize2 = () => {
   return (
@@ -484,7 +485,7 @@ const ProductCustomize2 = () => {
           </div>
         </div>
         <div className="section-footer" id="measureMentTab">
-          <a href="product-customize3.html" type="button" className="next-btn button">Next</a>
+          <Link to="/productCustomize3" type="button" className="next-btn button">Next</Link>
           <div
             className="offcanvas offcanvas-bottom bg-dark"
             tabindex="-1"

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import SmallNav from '../components/indexPage/smallNav';
 
 const MyAccountPayment = () => {
@@ -69,7 +70,7 @@ const MyAccountPayment = () => {
 
     <div className="container pt-5">
       <div className="row pb-5 bakToMyorder">
-        <a href="myaccount.html"><i className="fa fa-angle-left fa-fw"></i>Back To My Account</a>
+        <Link to="/myAccount"><i className="fa fa-angle-left fa-fw"></i>Back To My Account</Link>
       </div>
       <div className="mainHeading">
         <div className="headingInner">

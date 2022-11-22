@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -79,11 +80,11 @@ function Header() {
                     <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
                       style={{ fontSize: "10px" }}>9</span></span>
                 </a>
-                <a className="p-1 btn" href="cart-page.html">
+                <Link className="p-1 btn" to="cart">
                   <span className="position-relative"><i className="bx bx-cart fs-4" style={{ fontSize: "20px" }}></i>
                     <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
                       style={{ fontSize: "10px" }}>9</span></span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
