@@ -21,7 +21,29 @@ const Section1 = () => {
             <Swiper
               slidesPerView={9}
               spaceBetween={30}
-              
+              breakpoints= {
+                {200: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                500: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                640: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 9,
+                  spaceBetween: 30,
+                },
+              }
+              } 
               loop={true}
               loopFillGroupWithBlank={true}
               pagination={{

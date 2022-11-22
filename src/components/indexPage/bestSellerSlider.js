@@ -13,8 +13,8 @@ const BestSellerSlider = () => {
             <div className="col-xs-12">
                 <div className="">
                     <Swiper
-                      slidesPerView={2}
-                      spaceBetween={10}
+                      slidesPerView={3}
+                      spaceBetween={30}
                       breakpoints= {
                         {200: {
                           slidesPerView: 3,
@@ -47,17 +47,17 @@ const BestSellerSlider = () => {
                       className="focusSlider"
                     >
                       <div className="swiper-wrapper mySwiper main-slider">
-                        <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
-                        <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
-                        <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a>
-                        <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
-                        <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
-                        <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a>
-                        <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
-                        <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
-                        <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a>
-                        <a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a>
-                        <a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a></SwiperSlide>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a></SwiperSlide>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a></SwiperSlide>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a></SwiperSlide>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a></SwiperSlide>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a></SwiperSlide>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a></SwiperSlide>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a></SwiperSlide>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/t-shirt2.png" alt="" /></a></SwiperSlide>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/t-shirt.png" alt="" /></a></SwiperSlide>
+                        <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/others/benchali.png" alt="" /></a></SwiperSlide>
                       </div>
                     </Swiper>    
                     {/* <div className="swiper focusSlider">

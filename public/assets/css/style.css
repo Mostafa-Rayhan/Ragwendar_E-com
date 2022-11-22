@@ -415,8 +415,8 @@ nav-font {
 }
 .swiper-slide img {
    display: block;
-   /* width: 100%;  */
-   /* height: 95%;  */
+   /* width: 100%; 
+   height: 95%;  */
    object-fit: cover; 
    /* margin-right: 10px; */
 }
