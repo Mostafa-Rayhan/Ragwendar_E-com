@@ -21,6 +21,7 @@ import MyAccountAddress from './Pages/MyAccountAddress';
 import MyProfile from './Pages/MyProfile';
 
 import LandingPage from './Pages/LandingPage';
+import Order from './Pages/Order';
 
 
 
@@ -52,6 +53,7 @@ function App() {
           <Route path="myProfile" element={ <MyProfile /> }></Route>
 
           <Route path="landingPage" element={ <LandingPage /> }></Route>
+          <Route path="order" element={ <Order /> }></Route>
           
           {/* <Route path="wishlist" element={ <Wishlist /> }></Route> */}
 
