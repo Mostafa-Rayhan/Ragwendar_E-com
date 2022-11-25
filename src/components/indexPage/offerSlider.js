@@ -27,10 +27,12 @@ const OfferSlider = () => {
                   slidesPerView: 3,
                   spaceBetween: 10,
                 },
+                
                 500: {
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
+
                 640: {
                   slidesPerView: 3,
                   spaceBetween: 30,
@@ -43,6 +45,7 @@ const OfferSlider = () => {
                   slidesPerView: 3,
                   spaceBetween: 30,
                 },
+                
               }
               }
               loop={true}
@@ -55,17 +58,17 @@ const OfferSlider = () => {
               className="mySwiper"
             >
               <div className="swiper-wrapper mySwiper main-slider">
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
+              <SwiperSlide className="slide-style" style={{ height: "570px" }}><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer3.png" alt="" height="900" /></a></SwiperSlide>
+              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
+              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a></SwiperSlide>
+              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a></SwiperSlide>
+              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
+              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a></SwiperSlide>
+              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a></SwiperSlide>
+              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
+              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a></SwiperSlide>
+              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a></SwiperSlide>
+              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
               </div>
             </Swiper>
        
