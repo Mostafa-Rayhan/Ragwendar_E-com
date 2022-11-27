@@ -12,23 +12,41 @@ const BestSellerMen = () => {
       <h2 id="main-popular-h3">BESTSELLER FOR MEN</h2>
       <div className="row mt-2">
         <div className="col-xs-12">
-          <div id="main-bestseller" className="swiper bestSellerSlider">
-            <div className="swiper-wrapper">
+          {/* <div id="main-bestseller" className="swiper bestSellerSlider"> */}
+            {/* <div className="swiper-wrapper"> */}
             <Swiper
-              slidesPerView={6}
-              spaceBetween={30}
-              
+              autoplay= {
+                {
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }
+              }
+              breakpoints= {{
+                200: {
+                  slidesPerView: 3,
+                },
+                500: {
+                  slidesPerView: 3,
+                },
+                640: {
+                  slidesPerView: 4,
+                },
+                768: {
+                  slidesPerView: 5,
+                },
+                1024: {
+                  slidesPerView: 6,
+                },
+              }}
               loop={true}
-              loopFillGroupWithBlank={true}
               pagination={{
                 clickable: true,
               }}
-              
               className="mySwiper"
             >
 
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="./assets/dresses/best-seller/best-seller.png" alt="" />
                   <div className="d-flex align-items-center pt-1">
@@ -41,7 +59,7 @@ const BestSellerMen = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="./assets/dresses/best-seller/best-seller2.png" alt="" />
                   <div className="d-flex align-items-center pt-1">
@@ -54,7 +72,7 @@ const BestSellerMen = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="./assets/dresses/best-seller/best-seller3.png" alt="" />
                   <div className="d-flex align-items-center pt-1">
@@ -67,7 +85,7 @@ const BestSellerMen = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="./assets/dresses/best-seller/best-seller4.png" alt="" />
                   <div className="d-flex align-items-center pt-1">
@@ -80,7 +98,7 @@ const BestSellerMen = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="./assets/dresses/best-seller/best-seller5.png" alt="" />
                   <div className="d-flex align-items-center pt-1">
@@ -93,7 +111,7 @@ const BestSellerMen = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="./assets/dresses/best-seller/best-seller.png" alt="" />
                   <div className="d-flex align-items-center pt-1">
@@ -106,7 +124,7 @@ const BestSellerMen = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="./assets/dresses/best-seller/best-seller2.png" alt="" />
                   <div className="d-flex align-items-center pt-1">
@@ -119,7 +137,7 @@ const BestSellerMen = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="./assets/dresses/best-seller/best-seller3.png" alt="" />
                   <div className="d-flex align-items-center pt-1">
@@ -132,7 +150,7 @@ const BestSellerMen = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="./assets/dresses/best-seller/best-seller4.png" alt="" />
                   <div className="d-flex align-items-center pt-1">
@@ -147,8 +165,8 @@ const BestSellerMen = () => {
 
             </Swiper>
                     
-            </div>
-          </div>
+            {/* </div> */}
+          {/* </div> */}
         </div>
       </div>
     </div>

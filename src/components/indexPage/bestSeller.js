@@ -20,45 +20,39 @@ const BestSeller = () => {
       </div>
       <div className="row">
         <div className="col-xs-12">
-          <div id="main-bestseller" className="swiper bestSellerSlider">
-            <div className="swiper-wrapper">
+          {/* <div id="main-bestseller" className="swiper bestSellerSlider"> */}
+            {/* <div className="swiper-wrapper"> */}
             <Swiper
-              slidesPerView={6}
-              spaceBetween={30}
-              breakpoints= {
-                {200: {
+              autoplay= {{
+                  delay: 2500,
+                  disableOnInteraction: false,
+              }}
+              breakpoints= {{
+                200: {
                   slidesPerView: 3,
-                  spaceBetween: 10,
                 },
                 500: {
                   slidesPerView: 3,
-                  spaceBetween: 10,
                 },
                 640: {
                   slidesPerView: 4,
-                  spaceBetween: 30,
                 },
                 768: {
                   slidesPerView: 5,
-                  spaceBetween: 30,
                 },
                 1024: {
                   slidesPerView: 6,
-                  spaceBetween: 20,
                 },
-              }
-              }
+              }}
               loop={true}
-              loopFillGroupWithBlank={true}
               pagination={{
                 clickable: true,
               }}
-              
               className="mySwiper"
             >
 
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="#flashSale" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img
                     src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-discount-1637307127-1640757473.jpg"
@@ -88,7 +82,7 @@ const BestSeller = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="#flashSale" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-collab-store-1637307127.jpg"
                     alt="" />
@@ -117,7 +111,7 @@ const BestSeller = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="#flashSale" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-best-seller-1637307127.jpg"
                     alt="" />
@@ -146,7 +140,7 @@ const BestSeller = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="#flashSale" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="https://images.bewakoof.com/uploads/grid/app/vote-for-design-1641715844.jpg" alt="" />
                   <div className="tag-container">
@@ -174,7 +168,7 @@ const BestSeller = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="#flashSale" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-new-arrival-1637307130.jpg"
                     alt="" />
@@ -203,7 +197,7 @@ const BestSeller = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="#flashSale" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="https://images.bewakoof.com/uploads/grid/app/new-tod-thumbnail-cosmos-1--1--1640666014.jpg"
                     alt="" />
@@ -232,7 +226,7 @@ const BestSeller = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="#flashSale" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-plus-size-1637307128.jpg"
                     alt="" />
@@ -261,7 +255,7 @@ const BestSeller = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="#flashSale" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="https://images.bewakoof.com/uploads/grid/app/last-sizes-left-1639915515.jpg" alt="" />
                   <div className="tag-container">
@@ -289,7 +283,7 @@ const BestSeller = () => {
               </a>
               </SwiperSlide>
               <SwiperSlide>
-              <a href="" className="swiper-slide position-relative">
+              <a href="#flashSale" className="position-relative">
                 <div className="wZd7LROynlc3sM2R4u2wJWSddETIfR2C">
                   <img src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-essentials-1637307130.jpg"
                     alt="" />
@@ -321,8 +315,8 @@ const BestSeller = () => {
             </Swiper>
                         
               
-            </div>
-          </div>
+            {/* </div> */}
+          {/* </div> */}
         </div>
       </div>
     </div>

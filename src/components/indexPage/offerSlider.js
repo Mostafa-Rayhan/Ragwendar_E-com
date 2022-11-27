@@ -12,68 +12,76 @@ const OfferSlider = () => {
     <div className="row">
       <div className="col-xs-12">
         <div className="">
-          <div className="swiper focusSlider">
-            <div className="swiper-wrapper main-slider">
+          {/* <div className="swiper focusSlider"> */}
+            {/* <div className="swiper-wrapper main-slider"> */}
             <Swiper
-              slidesPerView={3}
-              // spaceBetween={30}
               autoplay= {
-                {delay: 2500,
-                disableOnInteraction: false,
+                {
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }
               }
-              }
-              breakpoints= {
-                {200: {
+              breakpoints= {{
+                200: {
                   slidesPerView: 3,
-                  spaceBetween: 10,
                 },
-                
                 500: {
                   slidesPerView: 3,
-                  spaceBetween: 20,
                 },
-
                 640: {
                   slidesPerView: 3,
-                  spaceBetween: 30,
                 },
                 768: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
+                  slidesPerView: 4,
                 },
                 1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
+                  slidesPerView: 4,
                 },
-                
-              }
-              }
+              }}
               loop={true}
               loopFillGroupWithBlank={true}
-              
               pagination={{
                 clickable: true,
               }}
-              
-              className="mySwiper"
+              className="my-offer"
             >
-              <div className="swiper-wrapper mySwiper main-slider">
-              <SwiperSlide className="slide-style" style={{ height: "570px" }}><a className="swiper-slide"><img src="./assets/dresses/offer-zone/offer3.png" alt="" height="900" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a></SwiperSlide>
-              <SwiperSlide><a className="swiper-slide" style={{ height: "570px" }}><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a></SwiperSlide>
-              </div>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer3.png" alt="" height="900" /></a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer5.png" alt="" /></a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer3.png" alt="" /></a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#"><img src="./assets/dresses/offer-zone/offer4.png" alt="" /></a>
+                </SwiperSlide>
             </Swiper>
        
-            </div>
-          </div>
+            {/* </div> */}
+          {/* </div> */}
         </div>
       </div>
     </div>

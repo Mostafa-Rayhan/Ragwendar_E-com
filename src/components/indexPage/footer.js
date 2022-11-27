@@ -178,7 +178,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container-fluid">
-        <div className="row p-4">
+        <div className="row p-md-4">
           <div className="col-12">
 
             <button className="btn btn-outline-none collapseBtnText toggleBtn1" type="button" onclick="btn1()"
