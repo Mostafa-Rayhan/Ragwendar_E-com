@@ -35,7 +35,7 @@ const SingleProduct = () => {
             <div className="col-xs-12 col-sm-12 col-md-6">
                 <div className="row">
                 <div className="col-xs-12 col-sm-2 col-md-2 d-none d-sm-block" style={{ height: "fit-content !important" }}>
-                    <div className="swiper swiperThumb sliderWrpr" style={{ height: "100%" }}>
+                    <div className="swiper swiperThumb sliderWrpr" style={{ height: "30%" }}>
                     <div style={{
                             position: "relative",
                             textAlign: "center",
@@ -50,12 +50,12 @@ const SingleProduct = () => {
                             onSwiper={setThumbsSwiper}
                             loop={true}
                             spaceBetween={10}
-                            slidesPerView={4}
+                            slidesPerView={1}
                             freeMode={true}
                             watchSlidesProgress={true}
                             modules={[FreeMode, Navigation, Thumbs]}
                             className="mySwiper"
-                            thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
+                            // thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
                         > 
                             <SwiperSlide>
                             <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674694-1.jpg"
@@ -105,7 +105,7 @@ const SingleProduct = () => {
                             spaceBetween={10}
                             navigation={true}
                             // thumbs={{ swiper: thumbsSwiper }}
-                            thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
+                           // thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
                             modules={[FreeMode, Navigation, Thumbs]}
                             className="mySwiper2"
                         >
