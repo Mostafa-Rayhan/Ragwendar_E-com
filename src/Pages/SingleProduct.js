@@ -15,7 +15,7 @@ import { FreeMode, Navigation, Thumbs } from "swiper";
 const SingleProduct = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <>
+    <section>
         <div className="container">
             <nav aria-label="breadcrumb" className="py-3">
             <ol className="breadcrumb">
@@ -497,7 +497,7 @@ const SingleProduct = () => {
             </div>
         </div>
         </div>
-    </>
+    </section>
   )
 }
 
