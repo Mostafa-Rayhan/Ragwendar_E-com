@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../../styles/style.css"   
 
 function Header() {
   
   return (
     <section>
       <div class="sticky-top">
-        <nav classNames="d-md-block d-none " id="tab-color" color="blue">
+        <nav
+        
+         className="topNavbarIs " id="tab-color" color="blue">    
           <div className="container">
             <div className="d-flex justify-content-between align-items-center">
               <div className="nav-tab-color nav-font w-50 d-flex justify-content-between align-items-center ">
