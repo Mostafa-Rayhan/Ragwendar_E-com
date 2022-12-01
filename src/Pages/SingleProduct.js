@@ -56,6 +56,7 @@ const SingleProduct = () => {
                             watchSlidesProgress={true}
                             modules={[FreeMode, Navigation, Thumbs]}
                             className="mySwiper"
+                            thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
                         > 
                             <SwiperSlide>
                             <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674694-1.jpg"
@@ -104,7 +105,8 @@ const SingleProduct = () => {
                             loop={true}
                             spaceBetween={10}
                             navigation={true}
-                            thumbs={{ swiper: thumbsSwiper }}
+                            // thumbs={{ swiper: thumbsSwiper }}
+                            thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
                             modules={[FreeMode, Navigation, Thumbs]}
                             className="mySwiper2"
                         >
@@ -464,7 +466,7 @@ const SingleProduct = () => {
                     <div className="productPriceBox d-flex align-items-end">
                         <div className="discountedPriceText clr-p-black"><span>₹</span>499</div>
                         <div className="actualPriceText clr-shade5">₹830</div>
-                        <span className="sellingFastBox"></span>
+                        <span className="sellingFastBox"></span> 
                     </div>
                     </div>
                 </div>
