@@ -1,6 +1,20 @@
-import React from 'react'
+// import React from 'react'
+
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+
+// import required modules
+import { FreeMode, Navigation, Thumbs } from "swiper";
 
 const SingleProduct = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <>
         <div className="container">
@@ -33,26 +47,39 @@ const SingleProduct = () => {
                         <i className="fa fa-angle-up" aria-hidden="true"></i>
                     </div>
                     <div className="swiper-wrapper thumbSliderWrapperclassName">
-                        <div className="swiper-slide">
-                        <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674694-1.jpg"
-                            title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100"
-                            className="productThumbImage" />
-                        </div>
-                        <div className="swiper-slide">
-                        <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674698-2.jpg"
-                            title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100%"
-                            className="productThumbImage" />
-                        </div>
-                        <div className="swiper-slide">
-                        <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674702-3.jpg"
-                            title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100%"
-                            className="productThumbImage" />
-                        </div>
-                        <div className="swiper-slide">
-                        <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674715-6.jpg"
-                            title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100%"
-                            className="productThumbImage" />
-                        </div>
+                        <Swiper
+                            onSwiper={setThumbsSwiper}
+                            loop={true}
+                            spaceBetween={10}
+                            slidesPerView={4}
+                            freeMode={true}
+                            watchSlidesProgress={true}
+                            modules={[FreeMode, Navigation, Thumbs]}
+                            className="mySwiper"
+                        > 
+                            <SwiperSlide>
+                            <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674694-1.jpg"
+                                title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100"
+                                className="productThumbImage" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674698-2.jpg"
+                                title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100%"
+                                className="productThumbImage" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674702-3.jpg"
+                                title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100%"
+                                className="productThumbImage" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674715-6.jpg"
+                                title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100%"
+                                className="productThumbImage" />
+                            </SwiperSlide>
+                        
+                        </Swiper>
+                        
                     </div>
                     <div className="slickDownarrow" style={{
                             background: "#fff",
@@ -68,26 +95,42 @@ const SingleProduct = () => {
                 <div className="col-xs-12 col-sm-10 col-md-10 p-0 m-0" style={{ height: "80vh" }}>
                     <div thumbsSlider="" className="swiper swiperPruduct">
                     <div className="swiper-wrapper">
-                        <div className="swiper-slide">
-                        <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674694-1.jpg"
+                        
+                        <Swiper
+                            style={{
+                            "--swiper-navigation-color": "#fff",
+                            "--swiper-pagination-color": "#fff",
+                            }}
+                            loop={true}
+                            spaceBetween={10}
+                            navigation={true}
+                            thumbs={{ swiper: thumbsSwiper }}
+                            modules={[FreeMode, Navigation, Thumbs]}
+                            className="mySwiper2"
+                        >
+
+                            <SwiperSlide>
+                                <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674694-1.jpg"
                             title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100%"
                             className="productThumbImage" />
-                        </div>
-                        <div className="swiper-slide">
-                        <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674698-2.jpg"
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674698-2.jpg"
                             title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100%"
                             className="productThumbImage" />
-                        </div>
-                        <div className="swiper-slide">
-                        <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674702-3.jpg"
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674702-3.jpg"
                             title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100%"
                             className="productThumbImage" />
-                        </div>
-                        <div className="swiper-slide">
-                        <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674715-6.jpg"
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674715-6.jpg"
                             title="Men's Black Joggers-Front Bewakoof" alt="Shop Men's Black Joggers-Front" width="100%"
                             className="productThumbImage" />
-                        </div>
+                            </SwiperSlide>
+                        </Swiper>
+                        
                     </div>
                     </div>
                 </div>
@@ -206,7 +249,6 @@ const SingleProduct = () => {
                         <i className="fa fa-shopping-bag" aria-hidden="true"></i> ADD TO CART
                     </button>
                     </div>
-
                 </div>
                 <div className="row p-2 mb-5">
                     <button className="py-3 btnProductPage2">

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cart = () => {
   return (
-    <>
+    <section>
         <div className="sticky-top">
             <nav className="d-none d-md-block" id="tab-color" color="blue">
                 <div className="container">
@@ -340,7 +340,7 @@ const Cart = () => {
                 data-was-processed="true" />
             </div>
         </footer>
-    </>
+    </section>
     
   );
 }
