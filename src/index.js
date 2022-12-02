@@ -10,7 +10,8 @@ import "./assets/bootstrap/css/bootstrap.min.css"
 import "./assets/swiper/swiper-bundle.min.css"
 import "./assets/js/jquery.min.js"  
 import "./assets/boxicons/css/boxicons.min.css" 
-import "./assets/bootstrap/js/bootstrap.bundle.min.js"       
+import "./assets/bootstrap/js/bootstrap.bundle.min.js" 
+import 'bootstrap/dist/css/bootstrap.min.css';      
 // import "./assets/swiper/swiper-bundle.min.js"   
 
 const root = ReactDOM.createRoot(document.getElementById('root'));  

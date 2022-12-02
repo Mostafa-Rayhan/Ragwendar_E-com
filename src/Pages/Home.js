@@ -11,7 +11,8 @@ import Footer from '../components/indexPage/footer';
 
 const Home = () => {
   return (
-    <div><Header />
+    <div>
+      <Header />
     <LoginModal />
     <SignupModal />
     <Outlet></Outlet>

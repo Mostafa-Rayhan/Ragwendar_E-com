@@ -24,7 +24,8 @@ const SingleProduct = () => {
     }
     return (
         <section>
-            <div className="container">
+            <div className="container"
+            style={{overflow:"hidden"}}> 
                 <nav aria-label="breadcrumb" className="py-3">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item text-dark">

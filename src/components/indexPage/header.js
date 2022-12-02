@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../../styles/style.css"   
+import "../../styles/style.css"
+import pharmacy from "../../assets/img/logo.png"
 
 function Header() {
-  
+
   return (
     <section>
-      <div class="sticky-top">
+      <div class="sticky-top"
+      style={{}}>   
         <nav
-        
-         className="topNavbarIs " id="tab-color" color="blue">    
+
+          className="topNavbarIs " id="tab-color" color="blue">
           <div className="container">
             <div className="d-flex justify-content-between align-items-center">
               <div className="nav-tab-color nav-font w-50 d-flex justify-content-between align-items-center ">
@@ -40,8 +42,10 @@ function Header() {
                 <i className="fa fa-bars" aria-hidden="true"></i>
               </button>
 
-              <a href="index.html" className="navbar-brand brand-style"><img src="assets/img/logo.png" alt="e-Pharmacy"
-                  height="30" srcset="" className="d-inline-block align-text-top logo-navbar order-md-1 order-1" /></a>
+              <a href="index.html" className="navbar-brand brand-style">
+                <img src={pharmacy} alt="e-Pharmacy"
+                  height="30" srcset="" className="d-inline-block align-text-top logo-navbar order-md-1 order-1" />
+              </a>
 
               <div className="menus order-md-2 order-3" style={{ overflow: "auto" }}>
                 <div className="header-nav d-flex">
@@ -119,7 +123,7 @@ function Header() {
             <a className="sub-menu text-decoration-none text-uppercase text-center mx-2" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false" href="#">Regional</a>
 
-            
+
             <div className="dropdown-menu cCuVas w-100 m-0" aria-labelledby="navbarDropdown"
               style={{ borderTopLeftRadius: "0", borderTopRightRadius: "0" }}>
               <div className="container">
@@ -259,8 +263,8 @@ function Header() {
         </div>
       </div>
     </section>
-    
-    
+
+
   )
 }
 
