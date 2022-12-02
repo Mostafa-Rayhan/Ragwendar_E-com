@@ -1,6 +1,127 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+const data =
+  [
+    {
+      id: 1,
+       name: "Bewakoof",
+      image: "assets/productList/1.jpg",
+      price: 500,
+      discount: 20,
+      sold: 30,
+      description: "Customizable men's neck T shirt",
+
+    },
+    {
+      id: 2,
+       name: "Bewakoof",
+      image: "assets/productList/2.jpg",
+      price: 600,
+      discount: 20,
+      sold: 50,
+      description: "Customizable men's neck T shirt",
+
+    },
+    {
+      id: 3,
+       name: "Bewakoof",
+      image: "assets/productList/3.jpg",
+      price: 300,
+      discount: 20,
+      sold: 10,
+      description: "Customizable men's neck T shirt",
+
+    },
+    {
+      id: 4,
+       name: "Bewakoof",
+      image: "assets/productList/4.jpg",
+      price: 200,
+      discount: 40,
+      sold: 20,
+      description: "Customizable men's neck T shirt",
+
+    },
+    {
+      id: 5,
+       name: "Bewakoof",
+      image: "assets/productList/5.jpg",
+      price: 500,
+      discount: 30,
+      sold: 10,
+      description: "Customizable men's neck T shirt",
+
+    },
+    {
+      id: 6,
+       name: "Bewakoof",
+      image: "assets/productList/6.jpg",
+      price: 500,
+      discount: 20,
+      sold: 30,
+      description: "Customizable men's neck T shirt",
+
+    },
+    {
+      id: 7,
+       name: "Bewakoof",
+      image: "assets/productList/7.jpg",
+      price: 500,
+      discount: 10,
+      sold: 70,
+      description: "Customizable men's neck T shirt",
+
+    },
+    {
+      id: 8,
+       name: "Bewakoof",
+      image: "assets/productList/8.jpg",
+      price: 500,
+      discount: 20,
+      sold: 30,
+      description: "Customizable men's neck T shirt",
+
+    },
+    {
+      id: 9,
+       name: "Bewakoof",
+      image: "assets/productList/9.jpg",
+      price: 100,
+      discount: 40,
+      sold: 10,
+      description: "Customizable men's neck T shirt",
+
+    },
+    {
+      id: 10,
+       name: "Bewakoof",
+      image: "assets/productList/1.jpg",
+      price: 100,
+      discount: 40,
+      sold: 10,
+      description: "Customizable men's neck T shirt",
+
+    },
+    {
+      id: 11,
+       name: "Bewakoof",
+      image: "assets/productList/2.jpg",
+      price: 100,
+      discount: 40,
+      sold: 10,
+      description: "Customizable men's neck T shirt",
+
+    },
+  ]
 
 const Product = () => {
+
+  const [products, setProducts] = useState([]) 
+
+  useEffect(() => {
+    setProducts(data)
+  }, [])
+
   return (
     <section>
       <header className="container p-0">
@@ -25,11 +146,11 @@ const Product = () => {
       </div>
 
       <div className="container">
-        <div className="row wrap"  style={{ maxHeight: "100%", minHeight: "484.2px",  position: "relative" }} >
-          <div className="col-md-3  product-sidebar d-none d-md-block"> 
+        <div className="row wrap" style={{ maxHeight: "100%", minHeight: "484.2px", position: "relative" }} >
+          <div className="col-md-3  product-sidebar d-none d-md-block">
             <div className="sticky">
               <div className="box">
-                <div className="filterHeading"> 
+                <div className="filterHeading">
                   <h4>FILTERS</h4>
                 </div>
                 <div className="row w-100 m-0">
@@ -50,7 +171,7 @@ const Product = () => {
                       </li>
                     </ul>
                   </div>
-                  <hr/>
+                  <hr />
                   <button className="m-0 d-flex justify-content-between" type="button" data-bs-toggle="collapse"
                     data-bs-target="#sizesCollapse" aria-expanded="false" aria-controls="sizesCollapse">
                     <span>Sizes</span><i className="fa fa-angle-down" aria-hidden="true"></i>
@@ -77,7 +198,7 @@ const Product = () => {
                       </li>
                     </ul>
                   </div>
-                  <hr/>
+                  <hr />
                   <button className="m-0 d-flex justify-content-between" type="button" data-bs-toggle="collapse"
                     data-bs-target="#brandCollapse" aria-expanded="false" aria-controls="brandCollapse">
                     <span>Brand</span><i className="fa fa-angle-down" aria-hidden="true"></i>
@@ -95,7 +216,7 @@ const Product = () => {
                       </li>
                     </ul>
                   </div>
-                  <hr/>
+                  <hr />
                   <button className="m-0 d-flex justify-content-between" type="button" data-bs-toggle="collapse"
                     data-bs-target="#colorCollapse" aria-expanded="false" aria-controls="colorCollapse">
                     <span>Color</span><i className="fa fa-angle-down" aria-hidden="true"></i>
@@ -113,7 +234,7 @@ const Product = () => {
                       </li>
                     </ul>
                   </div>
-                  <hr/>
+                  <hr />
                   <button className="m-0 d-flex justify-content-between" type="button" data-bs-toggle="collapse"
                     data-bs-target="#designCollapse" aria-expanded="false" aria-controls="designCollapse">
                     <span>Design</span><i className="fa fa-angle-down" aria-hidden="true"></i>
@@ -131,7 +252,7 @@ const Product = () => {
                       </li>
                     </ul>
                   </div>
-                  <hr/>
+                  <hr />
                   <button className="m-0 d-flex justify-content-between" type="button" data-bs-toggle="collapse"
                     data-bs-target="#offersCollapse" aria-expanded="false" aria-controls="offersCollapse">
                     <span>Offers</span><i className="fa fa-angle-down" aria-hidden="true"></i>
@@ -143,7 +264,7 @@ const Product = () => {
                       </li>
                     </ul>
                   </div>
-                  <hr/>
+                  <hr />
                   <button className="m-0 d-flex justify-content-between" type="button" data-bs-toggle="collapse"
                     data-bs-target="#duscountCollapse" aria-expanded="false" aria-controls="duscountCollapse">
                     <span>Discounts</span><i className="fa fa-angle-down" aria-hidden="true"></i>
@@ -175,8 +296,8 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 col-md-9 offset-md-3">   
-              {/* offset-md-3 offset-lg-8 
+          <div className="col-sm-12 col-md-9 offset-md-3">
+            {/* offset-md-3 offset-lg-8 
             <div className="col-sm-12 col-md-12"> 
             <div className="shortingHeading">
                 <select name="" id="sortPrice" onchange="sort()">
@@ -188,38 +309,48 @@ const Product = () => {
               </div>  */}
             <div className="container p-0">
               <div className="row flex-wrap" id="produc-listng">
-                <div className="col-6 col-md-6 col-lg-4 p-2">
-                  <a href="/product_single.html">
-                    <div className="productCardBox">
-                      <div className="productCardImg false">
-                        <div className="productImg" style={{ width: "100%", position: "relative", background: "rgb(248, 249, 249)" }}>
-                          <img src="assets/productList/1.jpg" alt="" width="100%" height="100%" />
-                        </div>
-                        <div className="productCardDetail">
-                          <div className="d-flex">
-                            <div className="productNaming bkf-ellipsis">
-                              <h3 className="brand-name">Bewakoof</h3>
-                              <div className="clr-shade4 h3-p-name">
-                                Customizable Men's White Round Neck T-Shirt
+
+                {
+                  products?.map(p => {
+                    return (
+                      <div className="col-6 col-md-6 col-lg-4 p-2">
+                        <a href={`/singleProduct/${p.id}`}>  
+                          <div className="productCardBox">
+                            <div className="productCardImg false">
+                              <div className="productImg" style={{ width: "100%", position: "relative", background: "rgb(248, 249, 249)" }}>
+                                <img src={p.image}alt="" width="100%" height="100%" />
+                              </div>
+                              <div className="productCardDetail">
+                                <div className="d-flex">
+                                  <div className="productNaming bkf-ellipsis">
+                                    <h3 className="brand-name">{p.name}</h3>
+                                    <div className="clr-shade4 h3-p-name">
+                                      {p.description}
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="productPriceBox d-flex align-items-end">
+                                  <div className="discountedPriceText clr-p-black"><span>₹</span>{p.price}</div> 
+                                  <div className="actualPriceText clr-shade5">₹{p.price*p.discount/100}</div>
+                                  <span className="sellingFastBox"></span>
+                                </div>
+                                <div className="d-flex align-items-center justify-content-between loyalty-stock-wrap">
+                                  <div className="loyaltyPriceBox" style={{ width: "unset" }}>
+                                    <h6><b>₹{p.price*p.discount/100}</b>For TriBe Members</h6>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
-                          <div className="productPriceBox d-flex align-items-end">
-                            <div className="discountedPriceText clr-p-black"><span>₹</span>499</div>
-                            <div className="actualPriceText clr-shade5">₹830</div>
-                            <span className="sellingFastBox"></span>
-                          </div>
-                          <div className="d-flex align-items-center justify-content-between loyalty-stock-wrap">
-                            <div className="loyaltyPriceBox" style={{ width: "unset" }}>
-                              <h6><b>₹449</b>For TriBe Members</h6>
-                            </div>
-                          </div>
-                        </div>
+                        </a>
                       </div>
-                    </div>
-                  </a>
-                </div>
-                <div className="col-6 col-md-6 col-lg-4 p-2">
+
+                    )
+                  })
+                } 
+
+
+                {/* <div className="col-6 col-md-6 col-lg-4 p-2">
                   <a href="/product_single.html">
                     <div className="productCardBox">
                       <div className="productCardImg false">
@@ -529,14 +660,14 @@ const Product = () => {
                       </div>
                     </div>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
+
   )
 }
 

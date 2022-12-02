@@ -1,0 +1,53 @@
+
+      .form-control {
+        display: block;
+        border-width: 0 0 2px 0 !important;
+        outline: none;
+    }
+
+    .form-control:focus{
+        outline: none;
+    }
+
+  /* .tns{
+      margin-left: -20px;
+    }
+
+    .trns{
+      margin-left: 20px;
+    } */
+
+    p {
+      color: #878787;
+    }
+    
+    i {
+      color: #878787;
+    }
+
+    .dsn p{
+      color: black;
+    }
+
+  /* .price{
+      margin-top: -50px;
+  } */
+  
+  .payment-system{
+      margin-top: -100px;
+  }
+  
+  .icon-design i{
+      font-size: 30px;
+      margin-bottom: 10px;
+  }
+/*     
+  .form-control {
+      display: block;
+      border-width: 0 0 2px 0;
+      outline: none;
+  }
+  
+  .form-control:focus{
+      outline: none;
+  } */

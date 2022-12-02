@@ -18,20 +18,20 @@ import Banner4 from '../components/indexPage/banner4';
 const Index = () => {
   return (
     <div>
-        <Banner />
-    <Section1 />
-    <BestSeller />
-    <LittleBanner />
-    <PopularCatagories />
-    <Discount />
-    <OfferSlider />
-    <BannerFull />
-    <BestSellerMen />
-    <BestSellerSlider />
-    <Banner2 />
-    <DailyDrops />
-    <Banner3 />
-    <Banner4 />
+      <Banner />
+      <Section1 />
+      <BestSeller />
+      <LittleBanner />
+      <PopularCatagories />
+      <Discount />
+      <OfferSlider />
+      <BannerFull />
+      <BestSellerMen />
+      <BestSellerSlider />
+      <Banner2 />
+      <DailyDrops />
+      <Banner3 />
+      <Banner4 />
     </div>
   )
 }
