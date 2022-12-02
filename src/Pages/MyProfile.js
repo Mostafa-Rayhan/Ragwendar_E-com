@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import SmallNav from '../components/indexPage/smallNav';
+import SmallNav from '../components/smallNav';
 
 const MyProfile = () => {
   return (
     <>
     <SmallNav />
-    {/* <!-- The sidebar for Mobile Phones --> */}
+    {/* <!-- The sidebar for Mobile Phones --> */} 
     <div
       className="offcanvas offcanvas-start"
       style={{ width: "270px" }}

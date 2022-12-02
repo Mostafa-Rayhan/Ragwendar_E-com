@@ -1,19 +1,19 @@
 import React from 'react'
 
-import Banner from '../components/indexPage/banner';
-import Section1 from '../components/indexPage/section1';
-import BestSeller from '../components/indexPage/bestSeller';
-import LittleBanner from '../components/indexPage/littleBanner';
-import PopularCatagories from '../components/indexPage/popularCatagories';
-import Discount from '../components/indexPage/discount';
-import OfferSlider from '../components/indexPage/offerSlider';
-import BannerFull from '../components/indexPage/bannerFull';
-import BestSellerMen from '../components/indexPage/bestSellerMen';
-import BestSellerSlider from '../components/indexPage/bestSellerSlider';
-import Banner2 from '../components/indexPage/banner2';
-import DailyDrops from '../components/indexPage/dailyDrops';
-import Banner3 from '../components/indexPage/banner3';
-import Banner4 from '../components/indexPage/banner4';
+import Banner from '../components/banner';
+import Section1 from '../components/section1';
+import BestSeller from '../components/bestSeller';
+import LittleBanner from '../components/littleBanner';
+import PopularCatagories from '../components/popularCatagories';
+import Discount from '../components/discount';
+import OfferSlider from '../components/offerSlider';
+import BannerFull from '../components/bannerFull';
+import BestSellerMen from '../components/bestSellerMen';
+import BestSellerSlider from '../components/bestSellerSlider';
+import Banner2 from '../components/banner2';
+import DailyDrops from '../components/dailyDrops';
+import Banner3 from '../components/banner3';
+import Banner4 from '../components/banner4';
 
 const Index = () => {
   return (

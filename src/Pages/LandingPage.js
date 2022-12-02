@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Header from '../components/indexPage/header';
-import About from '../components/indexPage/about';
-import Footer from '../components/indexPage/footer';
+import Header from '../components/header';
+import About from '../components/about';
+import Footer from '../components/footer';
 
 const LandingPage = () => {
   return (

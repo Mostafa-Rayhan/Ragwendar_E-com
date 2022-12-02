@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import SmallNav from '../components/indexPage/smallNav';
+import SmallNav from '../components/smallNav';
 
 const MyAccountWallet = () => {
   return (

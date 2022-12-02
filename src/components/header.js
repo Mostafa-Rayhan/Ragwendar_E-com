@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../../styles/style.css"
-import pharmacy from "../../assets/img/logo.png"
+import "../assets/css/style.css" 
+import pharmacy from "../assets/img/logo.png" 
 
 function Header() {
 

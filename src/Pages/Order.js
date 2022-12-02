@@ -1,8 +1,6 @@
 import React from 'react'
 
 
-// import styles from './src/Pages/order.module.css'; 
-
 const Order = () => {
   return (
     

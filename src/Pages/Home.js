@@ -2,10 +2,10 @@ import React from 'react'
 
 import { Outlet } from 'react-router-dom';
 
-import Header from '../components/indexPage/header';
-import LoginModal from '../components/indexPage/loginModal';
-import SignupModal from '../components/indexPage/signupModal';
-import Footer from '../components/indexPage/footer';
+import Header from '../components/header';
+import LoginModal from '../components/loginModal';
+import SignupModal from '../components/signupModal'; 
+import Footer from '../components/footer';
 
 
 
