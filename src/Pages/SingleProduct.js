@@ -66,7 +66,7 @@ const SingleProduct = () => {
                                             watchSlidesProgress={true}
                                             modules={[FreeMode, Navigation, Thumbs]}
                                             className="mySwiper "
-                                            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+                                            // thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
                                         >
                                             <SwiperSlide>
                                                 <img src="https://images.bewakoof.com/t540/black-men-s-solid-jogger-451582-1646674694-1.jpg"
@@ -131,8 +131,8 @@ const SingleProduct = () => {
                                             loop={true}
                                             spaceBetween={10}
                                             slidesPerView={1}  
-                                            navigation={true}
-                                            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+                                            navigation={true} 
+                                            // thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
                                             modules={[FreeMode, Navigation, Thumbs]}
                                             className="mySwiper2"
                                         >
