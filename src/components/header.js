@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../assets/css/style.css" 
-import pharmacy from "../assets/img/logo.png" 
+import "../assets/css/style.css"
+import pharmacy from "../assets/img/logo.png"
 
 function Header() {
 
   return (
     <section>
       <div class="sticky-top"
-      style={{}}>   
+      >
         <nav
 
           className="topNavbarIs " id="tab-color" color="blue">
@@ -103,7 +103,7 @@ function Header() {
         <div className="container-fluid bg-light">
           <div className="sub-header-nav justify-content-center d-none d-md-flex" id="navbarExample4">
             <a className="sub-menu text-decoration-none text-uppercase text-center mx-2 sp" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" href="#">Self</a>
+              data-bs-toggle="dropdown" aria-expanded="false" href="#">Self</a> 
             <a className="sub-menu text-decoration-none text-uppercase text-center mx-2" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false" href="#">New In</a>
             <a className="sub-menu text-decoration-none text-uppercase text-center mx-2" id="navbarDropdown" role="button"
