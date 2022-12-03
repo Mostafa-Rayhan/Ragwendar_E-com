@@ -1,12 +1,15 @@
 import React from 'react'
 
+import returnImg from "../assets/img/easy_return.png"
+import logo from "../assets/img/logo.png" 
+
 const Footer = () => {
   return (
     <footer className="footerdiv py-5">
     <div className="container">
       <div className="row text-center">
         <div className="col">
-          <img src="assets/img/easy_return.png" height="30" alt="" />
+          <img src={returnImg} height="30" alt="" /> 
           <h6 className="m-0 fw-bold">EASY RETURN</h6>
           <span>30 Day Return Policy</span>
         </div>
@@ -30,7 +33,7 @@ const Footer = () => {
       <hr />
       <div className="row pt-4">
         <div className="col-xs-12">
-          <a href="index.html" className="navbar-brand brand-style"><img src="assets/img/logo.png" alt="e-Pharmacy"
+          <a href="index.html" className="navbar-brand brand-style"><img src={logo} alt="e-Pharmacy"
               height="50" srcset="" className="d-inline-block align-text-top logo-navbar" /></a>
         </div>
       </div>

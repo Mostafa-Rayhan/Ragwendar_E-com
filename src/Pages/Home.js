@@ -15,7 +15,7 @@ const Home = () => {
       <Header />
       <LoginModal />
       <SignupModal />
-      <Outlet></Outlet>
+      <Outlet></Outlet> 
       <Footer />
     </div>
   )

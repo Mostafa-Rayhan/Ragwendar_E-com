@@ -9,6 +9,10 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "../assets/css/style.css"
+import productList1 from  "../assets/productList/1.jpg"
+import productList2 from  "../assets/productList/2.jpg" 
+import productList3 from  "../assets/productList/3.jpg"
+import productList4 from  "../assets/productList/4.jpg"
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper";
@@ -437,7 +441,7 @@ const SingleProduct = () => {
                             <div className="productCardBox">
                                 <div className="productCardImg false">
                                     <div className="productImg" style={{ width: "100%", position: "relative", background: "rgb(248, 249, 249)" }}>
-                                        <img src="./assets/productList/1.jpg" alt="" width="100%" height="100%" />
+                                        <img src={productList1} alt="" width="100%" height="100%" />
                                     </div>
                                     <div className="productCardDetail">
                                         <div className="d-flex">
@@ -460,7 +464,7 @@ const SingleProduct = () => {
                             <div className="productCardBox">
                                 <div className="productCardImg false">
                                     <div className="productImg" style={{ width: "100%", position: "relative", background: "rgb(248, 249, 249)" }}>
-                                        <img src="./assets/productList/2.jpg" alt="" width="100%" height="100%" />
+                                        <img src={productList2} alt="" width="100%" height="100%" />
                                     </div>
                                     <div className="productCardDetail">
                                         <div className="d-flex">
@@ -483,7 +487,7 @@ const SingleProduct = () => {
                             <div className="productCardBox">
                                 <div className="productCardImg false">
                                     <div className="productImg" style={{ width: "100%", position: "relative", background: "rgb(248, 249, 249)" }}>
-                                        <img src="./assets/productList/3.jpg" alt="" width="100%" height="100%" />
+                                        <img src={productList3} alt="" width="100%" height="100%" />
                                     </div>
                                     <div className="productCardDetail">
                                         <div className="d-flex">
@@ -506,7 +510,7 @@ const SingleProduct = () => {
                             <div className="productCardBox">
                                 <div className="productCardImg false">
                                     <div className="productImg" style={{ width: "100%", position: "relative", background: "rgb(248, 249, 249)" }}>
-                                        <img src="./assets/productList/4.jpg" alt="" width="100%" height="100%" />
+                                        <img src={productList4} alt="" width="100%" height="100%" />
                                     </div>
                                     <div className="productCardDetail">
                                         <div className="d-flex">
