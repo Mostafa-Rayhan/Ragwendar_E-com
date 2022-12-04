@@ -76,7 +76,7 @@ const Cart = () => {
 
         // }
 
-        console.log(id);  
+        console.log(id);   
 
     }
     console.log(quantity); 
@@ -143,13 +143,18 @@ const Cart = () => {
                                             </div>
                                             <div className="fY9jTItCuJ9wIqYrPGZVU">
                                                 <div className="CQ8wzZnxMzMzFcX1PFmTQqQXcedWShB49x8OPp38JY">
-                                                    <select className="form-select" aria-label="Selct size" onChange={()=>getProductQuantity(p.id)}>   
-                                                        <option selected>Qty</option>
-                                                        <option value="1">1</option> 
+                                                    <select className="form-select" aria-label="Selct size"
+  
+                                                     onChange={(e, )=>{
+                                                        getProductQuantity(e,p.id)    
+                                                     }}
+                                                     >   
+                                                        {/* <option selected>Qty</option> */}
+                                                        <option selected value="1">1</option> 
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
                                                         <option value="4">4</option>
-                                                        <option value="5">5</option>
+                                                        <option value="5">5</option> 
                                                         <option value="6">6</option>
                                                         <option value="7">7</option>
                                                         <option value="8">8</option>
