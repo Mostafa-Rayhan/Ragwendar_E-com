@@ -3992,6 +3992,12 @@ cursor: pointer;
   display: none !important; 
 }
 
+.mainCategoryBtn{
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+}
+
 @media only screen  and (max-width:768px) {
   .topNavbarIs{
   display: none !important; 

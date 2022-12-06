@@ -1,16 +1,57 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../assets/css/style.css"
 import pharmacy from "../assets/img/logo.png"
+import axiosInstance from '../axios';
 import TopNavbar from './TopNavbar';
 
 function Header() {
 
+  const [category, setCategory] = useState([])
+  const [category2, setCategory2]=useState([])
+  const [category2filter, setCategory2Filter]=useState([])
+
+  useEffect(() => {
+    axiosInstance.get("/category")
+      .then(data => {
+        setCategory(data.data);
+      })
+      .catch(err => {
+        console.log(err);
+      })
+
+  }, [])
+  useEffect(() => {
+    axiosInstance.get("/category2") 
+      .then(data => {
+        setCategory2(data.data);
+      })
+      .catch(err => {
+        console.log(err);
+      })
+
+  }, [])
+  useEffect(() => {
+    const filterCategory=category2.filter(c=>c.parent_id==1)
+    setCategory2Filter(filterCategory)
+
+  }, [category2])
+
+
+  const mainCategory = (id) => { 
+    const filterCategory=category2.filter(c=>c.parent_id==id)
+    setCategory2Filter(filterCategory) 
+    
+  }
+
+
   return (
     <section>
       <div class="sticky-top" >
-        
-        <TopNavbar/> 
+
+        <TopNavbar />
 
         <nav className="navbar navbar-expand-lg bg-white shadow-sm py-0 pt-1">
           <div className="container">
@@ -28,14 +69,26 @@ function Header() {
 
               <div className="menus order-md-2 order-3" style={{ overflow: "auto" }}>
                 <div className="header-nav d-flex">
-                  <a className="text-decoration-none text-uppercase tab-man text-center mx-2 active" aria-current="page"
+                  {
+                    category?.map((c,index)=> {
+                      return (
+
+                        <a className="text-decoration-none text-uppercase tab-man text-center mx-2 active cursor-pointer" aria-current="page" onClick={()=>{mainCategory(index+1)}} 
+                        >{c.name}</a>
+
+
+                      )
+                    })
+                  }
+
+                  {/* <a className="text-decoration-none text-uppercase tab-man text-center mx-2 active" aria-current="page"
                     href="#">Man</a>
                   <a className="text-decoration-none text-uppercase tab-woman text-center mx-2" aria-current="page"
                     href="#">Women</a>
                   <a className="text-decoration-none text-uppercase tab-kids text-center mx-2" aria-current="page"
                     href="#">Kids</a>
                   <a className="text-decoration-none text-uppercase tab-accessories text-center mx-2" aria-current="page"
-                    href="#">Accessories</a>
+                    href="#">Accessories</a>  */}
                 </div>
               </div>
 
@@ -56,8 +109,8 @@ function Header() {
                       Login
                     </button>
 
-                    <button type="button" className="loginBtn" data-bs-toggle="modal" data-bs-target="#signupmodal">
-                      Signup
+                    <button type="button" className="loginBtn signUpBtn" data-bs-toggle="modal" data-bs-target="#signupmodal">
+                      Sign up
                     </button>
 
                     <a className="p-1 btn d-md-none" href="#">
@@ -81,7 +134,18 @@ function Header() {
         </nav>
         <div className="container-fluid bg-light">
           <div className="sub-header-nav justify-content-center d-none d-md-flex" id="navbarExample4">
-            <a className="sub-menu text-decoration-none text-uppercase text-center mx-2 sp" id="navbarDropdown" role="button"
+
+            {
+              category2filter?.map(c=>{
+                return(
+                  <>
+                  <a className="sub-menu text-decoration-none text-uppercase text-center mx-2 " id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" href="#">{c.name}</a>
+                  </>
+                ) 
+              })
+            }
+            {/* <a className="sub-menu text-decoration-none text-uppercase text-center mx-2 sp" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false" href="#">Self</a>
             <a className="sub-menu text-decoration-none text-uppercase text-center mx-2" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false" href="#">New In</a>
@@ -100,7 +164,7 @@ function Header() {
             <a className="sub-menu text-decoration-none text-uppercase text-center mx-2" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false" href="#">All Men</a>
             <a className="sub-menu text-decoration-none text-uppercase text-center mx-2" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" href="#">Regional</a>
+              data-bs-toggle="dropdown" aria-expanded="false" href="#">Regional</a> */}
 
 
             <div className="dropdown-menu cCuVas w-100 m-0" aria-labelledby="navbarDropdown"
@@ -205,8 +269,16 @@ function Header() {
             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div className="offcanvas-body p-0">
-            <div className="border-bottom p-2 mx-4 d-flex justify-content-evenly">
-              <a href="" className="text-decoration-none">Login</a>/<a href=" " className="text-decoration-none">Sign up</a>
+            <div className="border-bottom p-2 mx-2 d-flex justify-content-start">
+              {/* <a href="" className="text-decoration-none">Login</a>
+              <a href=" " className="text-decoration-none">Sign up</a>  */}
+              <button type="button" className="loginBtn" data-bs-toggle="modal" data-bs-target="#loginmodal">
+                Login
+              </button>
+
+              <button type="button" className="loginBtn signUpBtn" data-bs-toggle="modal" data-bs-target="#signupmodal">
+                Sign up
+              </button>
             </div>
             <ul className="navbar-nav p-4">
               <p className="text-uppercase fw-bold text-muted text-light border-bottom m-0">Menu</p>
