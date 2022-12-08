@@ -10,12 +10,14 @@ import TopNavbar from './TopNavbar';
 function Header() {
 
   const [category, setCategory] = useState([])
-  const [category2, setCategory2]=useState([])
-  const [category2filter, setCategory2Filter]=useState([])
+  const [category2, setCategory2] = useState([])
+  const [filteredCategory, setFilteredCategory] = useState(1)
+  const [filtered2Category, setFiltered2Category] = useState()
 
   useEffect(() => {
     axiosInstance.get("/category")
       .then(data => {
+        // const filterCategory = data.data.filter(c => c.parent_id == 0)
         setCategory(data.data);
       })
       .catch(err => {
@@ -23,27 +25,11 @@ function Header() {
       })
 
   }, [])
-  useEffect(() => {
-    axiosInstance.get("/category2") 
-      .then(data => {
-        setCategory2(data.data);
-      })
-      .catch(err => {
-        console.log(err);
-      })
-
-  }, [])
-  useEffect(() => {
-    const filterCategory=category2.filter(c=>c.parent_id==1)
-    setCategory2Filter(filterCategory)
-
-  }, [category2])
 
 
-  const mainCategory = (id) => { 
-    const filterCategory=category2.filter(c=>c.parent_id==id)
-    setCategory2Filter(filterCategory) 
-    
+  const mainCategory = (id) => {
+    setFilteredCategory(id)
+
   }
 
 
@@ -70,14 +56,18 @@ function Header() {
               <div className="menus order-md-2 order-3" style={{ overflow: "auto" }}>
                 <div className="header-nav d-flex">
                   {
-                    category?.map((c,index)=> {
-                      return (
+                    category?.map((c, index) => {
+                      if (c.parent_id == 0) {
+                        return (
 
-                        <a className="text-decoration-none text-uppercase tab-man text-center mx-2 active cursor-pointer" aria-current="page" onClick={()=>{mainCategory(index+1)}} 
-                        >{c.name}</a>
+                          <a className="text-decoration-none text-uppercase tab-man text-center mx-2 active cursor-pointer" aria-current="page" onClick={() => { mainCategory(c.category_id) }}
+                          >{c.name}</a>
 
 
-                      )
+                        )
+
+                      }
+
                     })
                   }
 
@@ -135,14 +125,18 @@ function Header() {
         <div className="container-fluid bg-light">
           <div className="sub-header-nav justify-content-center d-none d-md-flex" id="navbarExample4">
 
+
             {
-              category2filter?.map(c=>{
-                return(
-                  <>
-                  <a className="sub-menu text-decoration-none text-uppercase text-center mx-2 " id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" href="#">{c.name}</a>
-                  </>
-                ) 
+              category?.map((c, index) => {
+                if (c.parent_id == filteredCategory) {
+                  return (
+                    <a className="sub-menu text-decoration-none text-uppercase text-center mx-2 sp" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"
+                      onClick={() => { setFiltered2Category(c.category_id) }}>{c.name}</a>
+
+                  )
+
+                }
+
               })
             }
             {/* <a className="sub-menu text-decoration-none text-uppercase text-center mx-2 sp" id="navbarDropdown" role="button"
@@ -171,8 +165,34 @@ function Header() {
               style={{ borderTopLeftRadius: "0", borderTopRightRadius: "0" }}>
               <div className="container">
                 <div className="d-md-flex d-sm-block my-3 justify-content-evenly">
+
+                  {/* {
+              category?.map((c, index) => {
+                if (c.parent_id == filteredCategory) { 
+                  return (
+                    <></>
+
+                  )
+
+                }
+
+              }) 
+            } */}
                   <div className=" mb-3 mb-xl-0">
                     <a className="mega-menu-s" href="">View All</a>
+
+                    {
+                      category?.map((c, index) => {
+                        if (c.parent_id == filtered2Category) {
+                          return (
+                            <a className="mega-menu-s mt-4" href="">{c.name}</a> 
+
+                          )
+
+                        }
+
+                      })
+                    }
 
                     <a className="mega-menu-s mt-4" href="">New in</a>
 

@@ -37,9 +37,10 @@ const SignupModal = () => {
     axiosInstance.post("/login",signUpData)  
     .then(data=>{
       console.log(data.data);
+      alert("successfully logged in")
     })
     .catch(err=>{
-      console.log(err);
+      console.log(err); 
     })
       
      
